@@ -28,7 +28,6 @@ public class BinarySearch {
             result = M / (budgets.length - index);
             i++;
         }
-        System.out.println(i);
         return result;
     }
 
