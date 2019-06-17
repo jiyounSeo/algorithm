@@ -1,4 +1,5 @@
 import queue.QueueProblem;
+import queue.QueueProblem2;
 
 public class Main {
 
@@ -17,6 +18,9 @@ public class Main {
 
         /* 2주차-2 - queue */
         QueueProblem queueProblem = new QueueProblem();
-        System.out.println(queueProblem.solution(2, 10, new int[]{7,4,5,6}));
+        //System.out.println(queueProblem.solution(2, 10, new int[]{7,4,5,6}));
+        System.out.println(queueProblem.solution(3, 10, new int[]{7,4,5,4,6}));
+        //System.out.println(queueProblem.solution(100, 100, new int[]{10}));
+        //System.out.println(queueProblem.solution(100, 100, new int[]{10,10,10,10,10,10,10,10,10,10}));
     }
 }
