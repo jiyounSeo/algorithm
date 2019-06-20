@@ -14,12 +14,14 @@ public class QueueProblem {
             queue.add(truckWeight);
         }
         int[] bridge = new int[bridgeLength];
-        int bridgeWeight = -1;
+        int bridgeWeight = 0;
 
-        while(bridgeWeight != 0) {
-            if (IntStream.of(bridge).sum() != 0) {
-                for(int i=bridgeLength-1; i>0; i--) {
+        while(true) {
+            if (bridgeWeight > 0) {
+                int i = bridgeLength-1;
+                while(i > 0) {
                     bridge[i] = bridge[i-1];
+                    i--;
                 }
                 bridge[0] = 0;
                 bridgeWeight = IntStream.of(bridge).sum();
@@ -32,6 +34,9 @@ public class QueueProblem {
                 }
             }
             answer++;
+            if(bridgeWeight == 0) {
+                break;
+            }
         }
         return answer;
     }
