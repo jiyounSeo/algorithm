@@ -30,7 +30,7 @@ public class Main {
         System.out.println(recurciveProblem.solution(100000));
          */
 
-        /* 3주차-2 bubblesort
+        /* 3주차-2 bubblesort */
         BubbleSort bubbleSort = new BubbleSort();
         int[] result = bubbleSort.solution(new int[]{1, 5, 2, 6, 3, 7, 4}, new int[][]{{2,5,3},{4,4,1},{1,7,3}});
         sysoutArray(result);
