@@ -1,4 +1,6 @@
-import sort.ShellSort;
+import set.SetProblem;
+
+import java.util.Arrays;
 
 public class Main {
 
@@ -33,15 +35,32 @@ public class Main {
         int[] result = bubbleSort.solution(new int[]{1, 5, 2, 6, 3, 7, 4}, new int[][]{{2,5,3},{4,4,1},{1,7,3}});
         sysoutArray(result); */
 
-        /* 4주차-1 shellsort */
-        ShellSort shellSort = new ShellSort();
-        System.out.println(shellSort.solution(new int[]{3,30,34,5,9}));
+        /* 4주차-1 shellsort
+        ShellSort2 shellSort = new ShellSort2();
+//        System.out.println(shellSort.solution(new int[]{21,212}));
+//        System.out.println(shellSort.solution(new int[]{12,121}));
+//        System.out.println(shellSort.solution(new int[]{40,403}));
+//        System.out.println(shellSort.solution(new int[]{40,405}));
+        System.out.println(shellSort.solution(new int[]{40,4,404}));
+//        System.out.println(shellSort.solution(new int[]{70,0,0,0,0}));
+//        System.out.println(shellSort.solution(new int[]{12,1213}));
+//        System.out.println(shellSort.solution(new int[]{5,546}));
+        System.out.println(shellSort.solution(new int[]{20,20,200}));
+//        System.out.println(shellSort.solution(new int[]{200,20,20}));
+        //System.out.println(shellSort.solution(new int[]{6,10,2}));
+        //System.out.println(shellSort.solution(new int[]{3,30,34,5,9}));
+        //System.out.println(shellSort.solution(new int[]{10,20,30,40,50,33}));
+        //System.out.println(shellSort.solution(new int[]{64, 900, 93, 921, 951, 5, 9, 432, 431, 45, 4, 40}));
+    */
+
+        SetProblem setProblem = new SetProblem();
+        int[] answer = setProblem.solution(2, 9);
+        System.out.println(Arrays.toString(answer));
+        int[] answer2 = setProblem.solution(3, 8);
+        System.out.println(Arrays.toString(answer2));
+        int[] answer3 = setProblem.solution(4, 16 );
+        System.out.println(Arrays.toString(answer3));
     }
 
-    private static void sysoutArray(int[] array) {
-        for (int i=0; i<array.length; i++) {
-            System.out.print(array[i] + " ");
-        }
-        System.out.println();
-    }
+
 }
