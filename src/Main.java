@@ -1,11 +1,11 @@
-import set.SetProblem;
+import codility.Solution;
 
 import java.util.Arrays;
 
 public class Main {
 
 
-    public static void main(String[] args) {
+    public static <Solution> void main(String[] args) {
         /* 1주차
         BinarySearch binarySearch = new BinarySearch();
         int result = binarySearch.solution(new int[]{120, 110, 140, 150}, 485);
@@ -53,6 +53,7 @@ public class Main {
         //System.out.println(shellSort.solution(new int[]{64, 900, 93, 921, 951, 5, 9, 432, 431, 45, 4, 40}));
     */
 
+        /*
         SetProblem setProblem = new SetProblem();
         int[] answer = setProblem.solution(2, 9);
         System.out.println(Arrays.toString(answer));
@@ -60,6 +61,28 @@ public class Main {
         System.out.println(Arrays.toString(answer2));
         int[] answer3 = setProblem.solution(4, 16 );
         System.out.println(Arrays.toString(answer3));
+
+         */
+
+   /*     StringProblem stringProblem = new StringProblem();
+        int answer = stringProblem.solution(new String[]{"ba", "na", "n", "a"}, "banana");
+        System.out.println(answer);
+*/
+        //answer = stringProblem.solution(new String[]{"app", "ap", "p", "l", "e", "ple", "pp"}, "apple");
+        //System.out.println(answer);
+
+        //answer = stringProblem.solution(new String[]{"ba", "an", "nan", "ban", "n"}, "banana");
+        //System.out.println(answer);
+
+        codility.Solution solution = new codility.Solution();
+        /*int i = solution.solution1(6);
+        System.out.println(i);
+        */
+
+        int a = solution.solution5_1(new int[]{0,1,0,1,1});
+        System.out.println(a);
+
+
     }
 
 
